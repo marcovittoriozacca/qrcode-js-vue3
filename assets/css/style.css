@@ -1,0 +1,11 @@
+.qrcode-container{
+    background-color: hsl(0, 0%, 100%);
+}
+
+.my-max-widht{
+    max-width: 500px;
+    margin: 0 auto;
+}
+body{
+    background-color: hsl(212, 45%, 89%);
+}
