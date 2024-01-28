@@ -14,15 +14,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="vh-100 d-flex flex-column row-gap-5 align-items-center justify-content-center my-max-widht py-5 ">
-                        <div class="qrcode-container bg-light rounded-4 p-4">
+                    <div class="vh-100 d-flex flex-column align-items-center justify-content-center my-max-widht py-5 ">
+                        <div class="qrcode-container bg-light rounded-4 p-4 mb-4 ">
                             <div class="qrcode-box w-100">
-                                <canvas id="qrcode" class="w-100 rounded-4 custom-canvas">
+                                <canvas @click="download()" id="qrcode" class="w-100 rounded-4 custom-canvas">
 
                                 </canvas>
                             </div>
         
-                            <div class="qrcode-info mt-4  text-center ">
+                            <div class="qrcode-info text-center ">
                                 <h1>QR Code Generator</h1>
                                 <p>Insert the url of the website you want to transform in qrcode down below on the input field and click the button!</p>
                             </div>
@@ -30,9 +30,9 @@
     
                         <div class="qrcode-btn w-100 ">
                             
-                            <input type="text" name="qrcodeUrl" id="qrcodeUrlInput" class="form-control w-100 mb-2 py-3 shadow-none " v-model="urlValue" placeholder="ex: https://www.google.com/" >
+                            <input type="text" name="qrcodeUrl" id="qrcodeUrlInput" class="form-control w-100 mb-3 py-3 shadow-none " v-model="urlValue" placeholder="ex: https://www.google.com/" >
 
-                            <button @click="getUrlValue" type="button" class="btn btn-success w-100 py-3 fs-2">Generate the QR code!</button>
+                            <button @click="getUrlValue" type="button" class="btn btn-success w-100 py-2 fs-4">Generate the QR code!</button>
                         </div>
                     </div>
 

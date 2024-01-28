@@ -3,8 +3,9 @@
 }
 
 .my-max-widht{
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
+
 }
 body{
     background-color: hsl(212, 45%, 89%);
